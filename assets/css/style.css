@@ -14412,10 +14412,10 @@ img {
     opacity: .2; }
 
 .swiper-button-prev::before {
-  content: "\eada"; }
+  /* content: "\eada"; */}
 
 .swiper-button-next::before {
-  content: "\eadc"; }
+  /* content: "\eadc"; */}
 
 .image-zoom {
   -webkit-transform: scale(1.2);
