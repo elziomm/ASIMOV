@@ -1,3 +1,10 @@
+/* Variáveis de Cor */
+:root {
+    --dark-color: #101010;
+    --white-color: #ffffff;
+    --highlight-color: rgb(250, 218, 39);
+}
+
 .swiper-button-prev, .swiper-button-next {
     background-color: #101010 !important;
     background-size: 35%;
@@ -9,4 +16,115 @@
 
 .swiper-button-next {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+section {
+    padding: 0 !important;
+}
+
+
+/* CSS para o primeiro SECTION da página */
+.section-boundary {
+    color: var(--highlight-color);
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background-image: linear-gradient(to right, white, #eeeeee );
+    display: flex;
+    align-items: center;
+}
+
+.section-boundary .content {
+    background-color: var(--dark-color);
+    height: 70vh;
+    width: 70vw;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+    /* text-shadow: 1px 1px var(--white-color); */
+
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.section-boundary .content-edge, .section-boundary .content-strip {
+    border-left-width: 6vw;
+    border-left-style: solid;
+
+    border-top-width: 30vh;
+    border-top-style: solid;
+
+    border-bottom-width: 40vh;
+    border-bottom-style: solid;
+}
+
+.section-boundary .content-edge {
+    border-left-color: var(--dark-color);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.section-boundary .content-strip {
+    border-left-color: transparent;
+    border-top-color: var(--dark-color);
+    border-bottom-color: var(--dark-color);
+
+    margin-left: -3vw;
+}
+
+.section-boundary .content-end {
+    width: 7vw;
+    height: 70vh;
+    border-top-right-radius: 7vw;
+    border-bottom-right-radius: 7vw;
+    background-color: var(--dark-color);
+    /* background-image: linear-gradient(to right, #101010 10%, transparent ); */
+}
+
+
+
+/* CSS para o segundo SECTION da página */
+.inverse {
+    color: var(--white-color) !important;
+
+    background-image: linear-gradient(to left, var(--dark-color), #151515 ) !important;
+
+    justify-content: flex-end !important;
+}
+
+.inverse .content-inverse {
+    background-color: var(--highlight-color) !important;
+
+    text-shadow: 1px 1px var(--dark-color);
+}
+
+.inverse .content-edge-inverse, .inverse .content-strip-inverse {
+    border-right-style: solid !important;
+    border-right-width: 6vw !important;
+}
+
+.inverse .content-edge-inverse {
+    border-left: none !important;
+
+    border-right-color: var(--highlight-color);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.inverse .content-strip-inverse {
+    border-left: none !important;
+
+    border-right-color: transparent;
+    border-top-color: var(--highlight-color);
+    border-bottom-color: var(--highlight-color);
+
+    margin-right: -3vw;
+    margin-left: 0 !important;
 }
