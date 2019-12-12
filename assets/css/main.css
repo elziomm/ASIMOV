@@ -36,6 +36,8 @@ section {
     background-image: linear-gradient(to right, var(--highlight-color), var(--white-color) );
     display: flex;
     align-items: center;
+
+    box-shadow: 0px 0px 20px 0px #101010;
 }
 
 .section-boundary .content {
@@ -47,7 +49,6 @@ section {
     font-size: 1.5em;
     line-height: 1.5em;
     text-align: justify;
-    /* text-shadow: 0.5px 0.5px var(--dark-color); */
 
     display: flex;
     align-items: center;
@@ -73,12 +74,6 @@ section {
     border-top: 45vh solid transparent;
     border-bottom: 55vh solid transparent;
 
-    /* width: 7vw;
-    height: 100vh;
-    border-top-right-radius: 7vw;
-    border-bottom-right-radius: 7vw;
-    background-color: var(--dark-color); */
-    /* background-image: linear-gradient(to right, #101010 10%, transparent ); */
     z-index: 2;
 }
 
@@ -97,50 +92,39 @@ section {
 
 
 /* CSS para o segundo SECTION da página */
+.light-content {
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+
+/* CSS para o terceiro SECTION da página */
 .inverse {
-    color: var(--dark-color) !important;
-
-    background-image: linear-gradient(to left, var(--highlight-color), var(--dark-color) 70% ) !important;
-
     justify-content: flex-end !important;
 }
 
-.inverse .content-inverse {
-    background-color: var(--white-color) !important;
+.inverse .content-edge-inverse, .inverse .content-strip-inverse, .inverse .content-end-inverse {
+    border-right-style: solid;
+    border-right-width: 5vw;
+    border-right-color: var(--dark-color);
 
-    /* text-shadow: 0.5px 0.5px var(--dark-color); */
-}
-
-.inverse .content-strip-inverse, .inverse .content-end-inverse {
-    border-right-style: solid !important;
-    border-right-width: 5vw !important;
+    border-left: none !important;
 }
 
 .inverse .content-edge-inverse {
-    border-left: none !important;
-
-    border-right: 3.5vw solid var(--white-color);
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-right-width: 3.5vw !important;
 }
 
 .inverse .content-strip-inverse {
-    border-left: none !important;
-
-    border-right-color: transparent;
-    border-top-color: var(--white-color);
-    border-bottom-color: var(--white-color);
+    border-right-color: transparent !important;
 
     margin-right: -3vw;
     margin-left: 0 !important;
-}
-
-.inverse .content-end-inverse {
-    border-left: none !important;
-
-    border-right-color: var(--white-color);
-    border-top-color: transparent;
-    border-bottom-color: transparent;
 }
 
 .inverse .content-bg-inverse {
