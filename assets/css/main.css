@@ -2,7 +2,7 @@
 :root {
     --dark-color: #101010;
     --white-color: #ffffff;
-    --highlight-color: rgb(250, 218, 39);
+    --highlight-color: #ffd413;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -25,7 +25,7 @@ section {
 
 /* CSS para o primeiro SECTION da página */
 .section-boundary {
-    color: var(--highlight-color);
+    color: var(--white-color);
     height: 100vh;
     width: 100%;
 
@@ -33,7 +33,7 @@ section {
     padding: 0;
     border: none;
 
-    background-image: linear-gradient(to right, white, #eeeeee );
+    background-image: linear-gradient(to right, var(--highlight-color), var(--white-color) );
     display: flex;
     align-items: center;
 }
@@ -47,73 +47,79 @@ section {
     font-size: 1.5em;
     line-height: 1.5em;
     text-align: justify;
-    /* text-shadow: 1px 1px var(--white-color); */
+    /* text-shadow: 0.5px 0.5px var(--dark-color); */
 
     display: flex;
     align-items: center;
     padding: 2%;
 }
 
-.section-boundary .content-edge, .section-boundary .content-strip {
-    border-left-width: 6vw;
-    border-left-style: solid;
-
-    border-top-width: 30vh;
-    border-top-style: solid;
-
-    border-bottom-width: 40vh;
-    border-bottom-style: solid;
-}
-
 .section-boundary .content-edge {
-    border-left-color: var(--dark-color);
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-left: 3.5vw solid var(--dark-color);
+    border-top: 30vh solid transparent;
+    border-bottom: 40vh solid transparent;
 }
 
 .section-boundary .content-strip {
-    border-left-color: transparent;
-    border-top-color: var(--dark-color);
-    border-bottom-color: var(--dark-color);
+    border-left: 5vw solid transparent;
+    border-top: 45vh solid var(--dark-color);
+    border-bottom: 55vh solid var(--dark-color);
 
     margin-left: -3vw;
 }
 
 .section-boundary .content-end {
-    width: 7vw;
-    height: 70vh;
+    border-left: 5vw solid var(--dark-color);
+    border-top: 45vh solid transparent;
+    border-bottom: 55vh solid transparent;
+
+    /* width: 7vw;
+    height: 100vh;
     border-top-right-radius: 7vw;
     border-bottom-right-radius: 7vw;
-    background-color: var(--dark-color);
+    background-color: var(--dark-color); */
     /* background-image: linear-gradient(to right, #101010 10%, transparent ); */
+    z-index: 2;
+}
+
+.section-boundary .content-bg {
+    width: 25vw;
+    height: 100vh;
+
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    margin-left: -5vw;
+    overflow: hidden;
 }
 
 
 
 /* CSS para o segundo SECTION da página */
 .inverse {
-    color: var(--white-color) !important;
+    color: var(--dark-color) !important;
 
-    background-image: linear-gradient(to left, var(--dark-color), #151515 ) !important;
+    background-image: linear-gradient(to left, var(--highlight-color), var(--dark-color) 70% ) !important;
 
     justify-content: flex-end !important;
 }
 
 .inverse .content-inverse {
-    background-color: var(--highlight-color) !important;
+    background-color: var(--white-color) !important;
 
-    text-shadow: 1px 1px var(--dark-color);
+    /* text-shadow: 0.5px 0.5px var(--dark-color); */
 }
 
-.inverse .content-edge-inverse, .inverse .content-strip-inverse {
+.inverse .content-strip-inverse, .inverse .content-end-inverse {
     border-right-style: solid !important;
-    border-right-width: 6vw !important;
+    border-right-width: 5vw !important;
 }
 
 .inverse .content-edge-inverse {
     border-left: none !important;
 
-    border-right-color: var(--highlight-color);
+    border-right: 3.5vw solid var(--white-color);
     border-top-color: transparent;
     border-bottom-color: transparent;
 }
@@ -122,9 +128,24 @@ section {
     border-left: none !important;
 
     border-right-color: transparent;
-    border-top-color: var(--highlight-color);
-    border-bottom-color: var(--highlight-color);
+    border-top-color: var(--white-color);
+    border-bottom-color: var(--white-color);
 
     margin-right: -3vw;
+    margin-left: 0 !important;
+}
+
+.inverse .content-end-inverse {
+    border-left: none !important;
+
+    border-right-color: var(--white-color);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.inverse .content-bg-inverse {
+    background-image: url("../img/5.jpg") !important;
+
+    margin-right: -5vw;
     margin-left: 0 !important;
 }
