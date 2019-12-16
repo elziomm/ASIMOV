@@ -5,6 +5,14 @@
     --highlight-color: #ffd413;
 }
 
+.row.card-deck {
+    margin: 0 !important;
+}
+
+.row .row {
+    margin-bottom: 1.875rem !important;
+}
+
 .swiper-button-prev, .swiper-button-next {
     background-color: #101010 !important;
     background-size: 35%;
@@ -33,7 +41,7 @@ section {
     padding: 0;
     border: none;
 
-    background-image: linear-gradient(to right, var(--highlight-color), var(--white-color) );
+    background-image: linear-gradient(to left, var(--highlight-color), var(--white-color) );
     display: flex;
     align-items: center;
 
@@ -46,13 +54,21 @@ section {
     width: 70vw;
     
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
     padding: 2%;
+}
+
+.section-boundary .content a {
+    font-size: 1em !important;
+    color: var(--highlight-color);
+
+    margin-bottom: 5%;
 }
 
 .section-boundary .content-edge {
@@ -101,11 +117,42 @@ section {
     border: none;
 }
 
+.card {
+    border: 3px solid var(--dark-color) !important;
+    padding: 0 !important;
+    color: var(--highlight-color);
+    text-shadow: 1.1px 1.1px var(--dark-color);
+
+    box-shadow: 5px 5px 10px grey;
+}
+
+.card a {
+    color: var(--highlight-color);
+    text-shadow: 1.1px 1.1px var(--dark-color);
+}
+
+.card-esquerda {
+    background-image: linear-gradient(to top, var(--dark-color), var(--white-color) 40%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.card-direita {
+    background-image: linear-gradient(to bottom, var(--dark-color), var(--white-color) 40%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
 
 
 /* CSS para o terceiro SECTION da página */
 .inverse {
     justify-content: flex-end !important;
+    background-image: linear-gradient(to right, var(--highlight-color), var(--white-color) ) !important;
+}
+
+.inverse .content {
+    text-align: end;
 }
 
 .inverse .content-edge-inverse, .inverse .content-strip-inverse, .inverse .content-end-inverse {
@@ -133,3 +180,32 @@ section {
     margin-right: -5vw;
     margin-left: 0 !important;
 }
+
+.como-participar {
+    height: 80%;
+    width: 100%;
+}
+
+.passos-participar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+
+    box-shadow: 0px 0px 0px 5px var(--highlight-color) ;
+}
+
+.como-participar .texto-participar {
+    border-bottom: 5px solid var(--highlight-color);
+    border-bottom-left-radius: 25px;
+
+    padding-bottom: 15px;
+    margin-top: -20px;
+    margin-left: -5px;
+}
+
