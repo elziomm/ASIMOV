@@ -1,3 +1,7 @@
+body {
+    z-index: -10;
+}
+
 /* Variáveis de Cor */
 :root {
     --dark-color: #101010;
@@ -109,40 +113,61 @@ section {
 
 
 /* CSS para o segundo SECTION da página */
-.light-content {
-    height: 100vh;
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-    border: none;
+#mid-content, .right-content, .left-content, .right-text, .left-text {
+    position: relative;
 }
 
+#mid-content {
+    margin: 0 !important;
+    background-color: rgb(219, 219, 219);
 
-.card {
-    border: 3px solid var(--dark-color) !important;
-    padding: 0 !important;
-    color: var(--highlight-color);
-    text-shadow: 1.1px 1.1px var(--dark-color);
-
-    box-shadow: 5px 5px 10px grey;
+    z-index: -1;
 }
 
-.card a {
-    color: var(--highlight-color);
-    text-shadow: 1.1px 1.1px var(--dark-color);
+#mid-content .right-content, #mid-content .left-content, .mid-faixa {
+    /* border: 1px solid black; */
+    height: 80vh;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 10px 0px #101010;
 }
 
-.card-esquerda {
-    background-image: linear-gradient(to top, var(--dark-color), var(--white-color) 40%);
-    /*border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;*/
+#mid-content .right-content, #mid-content .left-content {
+    height: 65vh;
+    z-index: -1;
 }
 
-.card-direita {
-    background-image: linear-gradient(to bottom, var(--dark-color), var(--white-color) 40%);
-    /*border-top-left-radius: 25px;
-    border-top-right-radius: 25px;*/
+#mid-content .right-content {
+    background-image: url(../img/card4.jpg);
+}
+
+#mid-content .left-content {
+    background-image: url(../img/card3.jpg);
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#mid-content .left-text {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-right: 10vw !important;
+}
+
+#mid-content .right-text {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-left: 10vw !important;
+    text-align: end;
+}
+
+.mid-faixa {
+    border-left: 10vw solid var(--highlight-color);
+    border-right: 15vw solid var(--dark-color);
+
+    margin-left: -13vw;
+    margin-right: -12vw;
+    transform: skewX(30deg);
+
+    box-shadow: 0px 0px 10px 0px #101010;
 }
 
 
