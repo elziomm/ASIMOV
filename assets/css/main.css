@@ -36,6 +36,12 @@ section {
 
 
 /* CSS para o primeiro SECTION da página */
+@media screen and (max-width: 992px) {
+    .section-boundary .content {
+        font-size: 2.2vw !important;
+    }
+}
+
 .section-boundary {
     color: var(--white-color);
     height: 100vh;
@@ -113,6 +119,38 @@ section {
 
 
 /* CSS para o segundo SECTION da página */
+@media screen and (max-width: 992px) {
+    .mid-faixa {
+        /* display: none; */
+
+        border-right: none !important;
+        border-left: none !important;
+        border-top: 4vw solid var(--highlight-color);
+        border-bottom: 4vw solid var(--dark-color);
+
+        width: 100% !important;
+        transform: none !important;
+        margin: 0 !important;
+
+        height: 0 !important;
+    }
+
+    #mid-content .right-content, #mid-content .left-content {
+        width: 80%;
+        height: 50vh !important;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* box-shadow: none !important; */
+
+        font-size: 0.9em;
+
+        display: flex !important;
+        align-items: center !important;
+    }
+
+
+  }
+
 #mid-content, .right-content, .left-content, .right-text, .left-text {
     position: relative;
 }
@@ -163,8 +201,8 @@ section {
     border-left: 10vw solid var(--highlight-color);
     border-right: 15vw solid var(--dark-color);
 
-    margin-left: -13vw;
-    margin-right: -12vw;
+    margin-left: -12.5vw;
+    margin-right: -12.5vw;
     transform: skewX(30deg);
 
     box-shadow: 0px 0px 10px 0px #101010;
@@ -214,25 +252,25 @@ section {
 }
 
 .passos-participar {
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 40px;
+    border-radius: 3vw;
     background-color: var(--dark-color);
     color: var(--white-color);
 
-    box-shadow: 0px 0px 0px 5px var(--highlight-color) ;
+    box-shadow: 0px 0px 0px 0.375vw var(--highlight-color) ;
 }
 
 .como-participar .texto-participar {
-    border-bottom: 5px solid var(--highlight-color);
-    border-bottom-left-radius: 25px;
+    border-bottom: 0.375vw solid var(--highlight-color);
+    border-bottom-left-radius: 1.875vw;
 
-    padding-bottom: 15px;
-    margin-top: -20px;
-    margin-left: -5px;
+    padding-bottom: 1.125vw;
+    margin-top: -1.5vw;
+    margin-left: -0.375vw;
 }
 
