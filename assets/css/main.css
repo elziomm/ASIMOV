@@ -44,7 +44,7 @@ section {
 
 .section-boundary {
     color: var(--white-color);
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 
     margin: 0;
@@ -61,7 +61,7 @@ section {
 
 .section-boundary .content {
     background-color: var(--dark-color);
-    height: 70vh;
+    height: 60vh;
     width: 70vw;
     
     font-weight: bold;
@@ -84,29 +84,29 @@ section {
 
 .section-boundary .content-edge {
     border-left: 3.5vw solid var(--dark-color);
-    border-top: 30vh solid transparent;
-    border-bottom: 40vh solid transparent;
+    border-top: 25vh solid transparent;
+    border-bottom: 35vh solid transparent;
 }
 
 .section-boundary .content-strip {
     border-left: 5vw solid transparent;
-    border-top: 45vh solid var(--dark-color);
-    border-bottom: 55vh solid var(--dark-color);
+    border-top: 35vh solid var(--dark-color);
+    border-bottom: 45vh solid var(--dark-color);
 
     margin-left: -3vw;
 }
 
 .section-boundary .content-end {
     border-left: 5vw solid var(--dark-color);
-    border-top: 45vh solid transparent;
-    border-bottom: 55vh solid transparent;
+    border-top: 35vh solid transparent;
+    border-bottom: 45vh solid transparent;
 
     z-index: 2;
 }
 
 .section-boundary .content-bg {
     width: 25vw;
-    height: 100vh;
+    height: 80vh;
 
     background-image: url("../img/1.jpg");
     background-size: cover;
@@ -211,6 +211,15 @@ section {
 
 
 /* CSS para o terceiro SECTION da página */
+@media screen and (max-width: 992px) {
+    .como-participar {
+        height: 50% !important;
+        margin-left: 25px;
+        margin-top: 20%;
+    }
+
+}
+
 .inverse {
     justify-content: flex-end !important;
     background-image: linear-gradient(to right, var(--highlight-color), var(--white-color) ) !important;
