@@ -1,0 +1,61 @@
+
+.header-paginas {
+    height: 100px;
+    width: 100%;
+    background-color: var(--dark-color);
+}
+
+.body-paginas {
+    background-color: rgba(202, 202, 202, 0.75);
+}
+
+.corpo-paginas {
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 4vw 7vw;
+
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 10px 0px var(--dark-color);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    text-align: justify;
+    flex-direction: column;
+}
+
+.footer-paginas {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.regulamento li{
+    list-style: decimal;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -.005em;
+}
+
+/* TITULO */
+.titulo {
+    color: #08088A;
+}
+  
+.titulo h1 {
+    font-size: 3.75em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.titulo span {
+    font-size: 0.875em;
+    font-style: italic;
+}
+
