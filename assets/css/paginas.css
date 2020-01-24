@@ -1,3 +1,19 @@
+@media screen and (max-width: 992px) {
+    .corpo-paginas {
+        font-size: .75em;
+
+        padding-top: 10vw !important;
+    }
+
+    h1 {
+        font-size: 2.5em !important;
+    }
+
+    .table td {
+        padding: 10px !important;
+        margin: 0px !important;
+    }
+}
 
 .header-paginas {
     height: 100px;
