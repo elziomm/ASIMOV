@@ -1,8 +1,11 @@
 @media screen and (max-width: 992px) {
     .corpo-paginas {
+        width: 95% !important;
         font-size: .75em;
 
         padding-top: 10vw !important;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
     }
 
     h1 {
@@ -12,6 +15,16 @@
     .table td {
         padding: 10px !important;
         margin: 0px !important;
+    }
+
+    .footer-paginas {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .corpo-paginas .regulamento, .corpo-paginas .titulo {
+        padding-left: 6vw !important;
+        padding-right: 4vw !important;
     }
 }
 

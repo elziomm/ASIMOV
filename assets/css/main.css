@@ -38,7 +38,7 @@ section {
 /* CSS para o primeiro SECTION da página */
 @media screen and (max-width: 992px) {
     .section-boundary .content {
-        font-size: 2.2vw !important;
+        font-size: 2.8vw !important;
     }
 }
 
@@ -214,8 +214,16 @@ section {
 @media screen and (max-width: 992px) {
     .como-participar {
         height: 50% !important;
-        margin-left: 25px;
-        margin-top: 20%;
+        padding-left: 10vw;
+        margin-top: 10%;
+
+        justify-content: flex-end;
+    }
+
+    .como-participar .col-md {
+        /* align-self: center !important; */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
 }
