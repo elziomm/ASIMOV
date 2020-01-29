@@ -58,6 +58,16 @@ img {
       "footer"
     ;
   }
+
+  [data-anime = "left"]{
+    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
 }
 
 .header-paginas {
@@ -175,7 +185,8 @@ img {
     flex: 1 0 60px;
   }
   .sidenav {
-    padding: 0 30px;
+    padding: 0 10px;
+    overflow: hidden;
   }
   .sidenav-item a {
     margin: 30px 30px 30px 0px;
@@ -209,6 +220,7 @@ img {
 @media (max-width: 600px) {
   .content{
     grid-template-columns: auto;
+    margin: 0px 10px;
   }
 }
 
