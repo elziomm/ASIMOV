@@ -291,4 +291,49 @@ section {
     margin-left: -0.375vw;
 }
 
+.display-1 .d-block {
+    font-size: 0.5em;
+}
+
+.clock {
+    width: 50%;
+    background-color: rgba(10, 10, 10, 0.75);
+    padding: 15px;
+    border: 1px solid var(--highlight-color);
+
+    position: relative;
+    left: 15px;
+    bottom: -25px;
+}
+
+@media screen and (max-width: 992px) {
+    .clock {
+        width: 100%;
+    }
+}
+
+.clock div {
+    color: var(--white-color);
+    text-align: center;
+
+    border-right: 2px solid var(--white-color);
+}
+
+.clock div:nth-child(3n) {
+    border-right: none;
+}
+
+.clock .clock-label {
+    font-size: 1.2em;
+    
+    letter-spacing: -1.8px;
+}
+
+.clock .clock-value {
+    font-size: 2.5em;
+}
+
+.text-white h1, .text-white h2 {
+    text-shadow: 2px 2px 0px var(--dark-color);
+}
 
