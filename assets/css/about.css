@@ -76,59 +76,6 @@ img {
   grid-template-columns: 1fr auto;
 }
 
-/* HEADER */
-/* .header {
-  grid-area: header;
-  background: linear-gradient(135deg, #D8D8D8, #000000);
-  padding: 30px;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
-.logo {
-  max-width: 200px;
-}
-
-.header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header nav a {
-  display: block;
-  padding: 10px;
-  color: white;
-  font-size: 1.125em;
-  background: rgba(0,0,0,.1);
-  border-radius: 5px;
-  transition: 0.1s;
-}
-
-.header nav a:hover {
-  background: white;
-  color: black;
-}
-
-.header li + li {
-  margin-left: 30px;
-}
-
-@media (max-width: 760px) {
-  .header {
-    grid-template-columns: auto;
-  }
-  .logo {
-    margin-bottom: 20px;
-  }
-  .header nav a {
-    font-size: 1em;
-  }
-  .header li + li {
-    margin-left: 10px;
-  }
-} */
-
 /* SIDENAV */
 
 .sidenav {
@@ -230,7 +177,7 @@ img {
 }
 
 .imagem-1 {
-  /* span 2 significa que ess imagem vai ocupar 2 linhas e será alinhada ao final dela sempre. */
+  /* span 2 significa que essa imagem vai ocupar 2 linhas e será alinhada ao final dela sempre. */
   grid-row: span 2;
   align-self: end;
 }
