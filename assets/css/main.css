@@ -175,7 +175,8 @@ section {
 }
 
 #mid-content .right-content {
-    background-image: url(../img/card4.jpg);
+    background-image: url(../img/CapasAsimov2.jpg);
+    background-size: cover;
 }
 
 #mid-content .left-content {
