@@ -9,6 +9,10 @@ body {
     --highlight-color: #ffd413;
 }
 
+.header {
+    background-color: rgba(10, 10, 10, 0.80);
+}
+
 .row.card-deck {
     margin: 0 !important;
 }
